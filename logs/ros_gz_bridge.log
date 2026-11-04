@@ -1,0 +1,6 @@
+[INFO] [1793820387.074118666] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/quarry/camera/image_raw (gz.msgs.Image) -> /quarry/camera/image_raw (sensor_msgs/msg/Image)] (Lazy 0)
+[INFO] [1793820387.082209363] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/quarry/camera/camera_info (gz.msgs.CameraInfo) -> /quarry/camera/camera_info (sensor_msgs/msg/CameraInfo)] (Lazy 0)
+[INFO] [1793820387.083165994] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/quarry/camera/image_raw (gz.msgs.Image) -> /camera/image_raw (sensor_msgs/msg/Image)] (Lazy 0)
+[INFO] [1793820387.083541828] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/quarry/camera/camera_info (gz.msgs.CameraInfo) -> /camera/camera_info (sensor_msgs/msg/CameraInfo)] (Lazy 0)
+[INFO] [1793820387.083903980] [ros_gz_bridge]: Creating GZ->ROS Bridge: [/world/quarry_world/clock (gz.msgs.Clock) -> /clock (rosgraph_msgs/msg/Clock)] (Lazy 0)
+[INFO] [1793821025.708364001] [rclcpp]: signal_handler(SIGINT/SIGTERM)

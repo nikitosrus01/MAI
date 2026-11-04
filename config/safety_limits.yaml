@@ -1,0 +1,69 @@
+
+# Конфигурация ограничений безопасности и параметров симуляции
+workspace_bounds:
+  x_min: -50.0  # Юг (м, локальная система ENU)
+  x_max: 50.0   # Север (м, локальная система ENU)
+  y_min: -50.0  # Запад (м, локальная система ENU)
+  y_max: 50.0   # Восток (м, локальная система ENU)
+  z_min: 1.0    # Минимальная рабочая высота полёта над точкой старта (м)
+  z_max: 25.0   # Максимальная безопасная высота полёта (м)
+
+flight_dynamics:
+  max_speed_mps: 4.0
+  default_takeoff_alt_m: 5.0
+  waypoint_acceptance_radius_m: 1.2
+  min_obstacle_clearance_m: 1.5
+  overfly_clearance_m: 2.5
+
+safety_timeouts:
+  heartbeat_timeout_sec: 3.0
+  image_freshness_timeout_sec: 5.0
+  action_execution_timeout_sec: 60.0
+  vlm_request_timeout_sec: 45.0
+  max_plan_steps: 12
+  max_consecutive_identical_actions: 3
+
+allowed_actions:
+  - takeoff
+  - goto
+  - move_relative
+  - inspect
+  - rotate
+  - set_yaw
+  - yaw
+  - turn
+  - look_at
+  - spin
+  - orbit
+  - hover
+  - wait
+  - change_altitude
+  - ascend
+  - descend
+  - climb
+  - return_home
+  - rtl
+  - land
+  - pause
+  - abort
+  - stop
+
+sitl_connection:
+  connection_string: "udp:127.0.0.1:14550"
+  baudrate: 115200
+  source_system: 255
+  strict_sitl_only: true
+
+vlm_settings:
+  ollama_host: "http://127.0.0.1:11434"
+  primary_model: "qwen2.5vl:7b"
+  fallback_model: "glm-5.2:cloud"
+  temperature: 0.1
+
+ros2_topics:
+  image_topic: "/quarry/camera/image_raw"
+  camera_info_topic: "/quarry/camera/camera_info"
+  command_topic: "/quarry/operator/command"
+  status_topic: "/quarry/mission/status"
+  telemetry_topic: "/quarry/drone/telemetry"
+extracted/drone_vlm_quarry/config/safety_limits.yaml. На экране.

@@ -1,0 +1,11 @@
+[1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="iris_with_standoffs"]/link[@name="imu_link"]/sensor[@name="imu_sensor"]/gz_frame_id:/home/nikita/drone/ardupilot_gazebo/models/iris_with_standoffs/model.sdf:L250]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="iris_with_standoffs"]/link[@name="imu_link"]/sensor[@name="imu_sensor"]/gz_frame_id:<data-string>:L254]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+[1;33mWarning [Utils.cc:132][0m [/sdf/model[@name="iris_with_ardupilot"]/model[@name="iris_with_standoffs"]/link[@name="imu_link"]/sensor[@name="imu_sensor"]/gz_frame_id:<data-string>:L255]: XML Element[gz_frame_id], child of element[sensor], not defined in SDF. Copying[gz_frame_id] as children of [sensor].
+/opt/ros/jazzy/opt/gz_sim_vendor/lib/ruby/gz/cmdsim8.rb:201:in `kill': No such process (Errno::ESRCH)
+	from /opt/ros/jazzy/opt/gz_sim_vendor/lib/ruby/gz/cmdsim8.rb:201:in `killProcess'
+	from /opt/ros/jazzy/opt/gz_sim_vendor/lib/ruby/gz/cmdsim8.rb:569:in `handle_signal'
+	from /opt/ros/jazzy/opt/gz_sim_vendor/lib/ruby/gz/cmdsim8.rb:579:in `block in execute'
+	from /opt/ros/jazzy/opt/gz_sim_vendor/lib/ruby/gz/cmdsim8.rb:584:in `wait2'
+	from /opt/ros/jazzy/opt/gz_sim_vendor/lib/ruby/gz/cmdsim8.rb:584:in `execute'
+	from /opt/ros/jazzy/opt/gz_tools_vendor/bin/gz:316:in `<main>'
+Escalating to SIGKILL on [Gazebo Sim Server]
